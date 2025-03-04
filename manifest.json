@@ -1,22 +1,18 @@
 {
   "charts": [
     {
-      "name": "nginx",
-      "repo": "https://helm.nginx.com/stable",
-      "chartName": "nginx-ingress",
-      "versions": ["1.0.0", "1.1.0"]
-    },
-    {
-      "name": "redis",
-      "repo": "https://charts.bitnami.com/bitnami",
-      "chartName": "redis",
-      "versions": ["16.0.0", "16.1.0"]
-    },
-    {
       "name": "istio",
       "repo": "https://istio-release.storage.googleapis.com/charts",
       "chartName": "istiod",
-      "versions": ["1.16.0", "1.16.1"]
+      "versions": [
+        {
+          "helmVersion": "1.16.1",
+          "images": [
+            {"name": "istio/proxyv2", "version": "1.16.1"},
+            {"name": "istio/install-cni", "version": "1.16.1"}
+          ]
+        }
+      ]
     }
   ]
 }
