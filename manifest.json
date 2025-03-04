@@ -11,6 +11,12 @@
       "repo": "https://charts.bitnami.com/bitnami",
       "chartName": "redis",
       "versions": ["16.0.0", "16.1.0"]
+    },
+    {
+      "name": "istio",
+      "repo": "https://istio-release.storage.googleapis.com/charts",
+      "chartName": "istiod",
+      "versions": ["1.16.0", "1.16.1"]
     }
   ]
 }
